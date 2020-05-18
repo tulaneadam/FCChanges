@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	
+<title>Untitled Document</title>
+<link href="css/customhome.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="container">
+		
+		<iframe id="iframe"></iframe>
+<br>
+	</div>
+	<div class="footer"><input type="text" id="url" value="indexx.html"><button type="button1" id="load">book</button></div>
+	<script src= "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+<script type="text/javascript">
+	
+			$('#load').click(function() {
+    $('#iframe').attr('src', $('#url').val());
+});
+	</script>
+</body>
+</html>
+
+
