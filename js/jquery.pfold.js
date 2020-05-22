@@ -70,11 +70,11 @@
 		// perspective value
 		perspective : 1200,
 		// each folding step's speed
-		speed : 900,
+		speed : 500,
 		// each folding step's easing 
 		easing : 'linear',
 		// delay between each (un)folding step (ms)
-		folddelay : 100,
+		folddelay : 25,
 		// number of times the element will fold
 		folds : 3,
 		// the direction of each unfolding step

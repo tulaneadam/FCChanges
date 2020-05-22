@@ -1,19 +1,41 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-	
+<meta charset="UTF-8">	
 <title>Untitled Document</title>
-<link href="css/customhome.css" rel="stylesheet" type="text/css">
+<link href="../Folding Comics/css/customhome.css" rel="stylesheet" type="text/css">
+	<style>
+ body { background: url(../Folding%20Comics/images/thought.gif); no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+		
+			.container > header h1 {
+			    color: #fff;
+			    text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+			}
+
+			.container > header h2,
+			p.info  {
+			    color: #4e2f1d;
+			    text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+			}
+		</style>
 </head>
 
-<body>
+<body class="body">
 	<div class="container">
+		<div class="sidebar">
+  <a class="active" href="../Folding Comics/home.html">Our Books</a>
+  <a Class="active" href="../Folding Comics/Abdul1.html" target="myIframe">Student1</a> <a class="a" href="#contact">Student2</a>
+  <a class="a" href="#about">Student3</a>
+</div>
 		
-		<iframe id="iframe"></iframe>
+		<iframe src="../Folding Comics/Stage.html" name="myIframe" class="content" scrolling="no"></iframe>
 <br>
 	</div>
-	<div class="footer"><input type="text" id="url" value="indexx.html"><button type="button1" id="load">book</button></div>
+	<div class="footer"></div>
 	<script src= "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
 <script type="text/javascript">
 	

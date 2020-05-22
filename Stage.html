@@ -11,11 +11,11 @@
         <link rel="shortcut icon" href="../favicon.ico"> 
         <link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link rel="stylesheet" type="text/css" href="css/pfold.css" />
-        <link rel="stylesheet" type="text/css" href="css/custom1.2.css" />
+        <link rel="stylesheet" type="text/css" href="css/customstage.css" />
 		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
 		<!--[if lte IE 8]><style>.support-note .note-ie{display:block;}</style><![endif]-->
 		<style>
-			body { background: url(images/bg.jpg); }
+			body { background-color: rgba(0,102,255,0) }
 			.container > header h1 {
 			    color: #fff;
 			    text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
@@ -29,11 +29,10 @@
 		</style>
     </head>
     <body>
-        <div class="container">
+         <div class="container">
 		
 			<!-- Codrops top bar -->
-            <!--/ Codrops top bar -->
-			
+            
 			
 			<section class="main demo-1">
 				
@@ -41,18 +40,17 @@
 					<div class="uc-initial-content">
 						<!-- custom content -->
 						<span class="clickme"></span>
-						<img src="images/smallerimages/Abdullah_23.jpg" width="200" height="143" alt=""/> 
-						
 					</div>
 					<div class="uc-final-content">
 						<!-- custom content -->
-						<img src="images/smallerimages/Abdullah_45.jpg" width="200" height="308" alt=""/>
-						<div class="scrollwrap"><a href="indexz.html" target="_self"><h3>Clickme2</h3></a>						
+						<div class="scrollwrap">
+							<h3>Read another comic book!</h3>
+							<p>Pick a name from the list on the left. Click on the book to open</p><span></span><p class="signature">THANKS SEQ ART!</p>
 						</div>
 						<span class="close">x</span>
-				  </div>
+					</div>
 				</div>
-</section>
+			 </section>
 
 		</div>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -62,10 +60,14 @@
 
 				var $container = $( '#uc-container' ),
 					pfold = $( '#uc-container' ).pfold({
+						
 						easing : 'ease-in-out',
-						folds : 1,
-						folddirection : ['bottom',]
+						folddelay : 100,
+						folds : 3,
+						folddirection : ['left','bottom','right']
 					});
+
+				
 
 				$container.find( 'span.clickme' ).on( 'click', function() {
 
@@ -74,9 +76,10 @@
 				} ).end().find( 'span.close' ).on( 'click', function() {
 
 					pfold.fold();
+					
 
 				} );
-				
+
 			});
 		</script>
     </body>
